@@ -11,11 +11,11 @@ import os
 if __name__ == "__main__":
     while True:
         os.system("cls")
-        logo = open("spambot2/assets/logo.txt", "r")
+        logo = open("assets/logo.txt", "r")
         output = "".join(logo.readlines())
         grey(output)
         green("\n" + "-" * 20)
-        data = open("spambot2/assets/version.txt", "r").read()
+        data = open("assets/version.txt", "r").read()
         cyan("Spam-Botz | " + data)
         time.sleep(1)
         print(
@@ -39,7 +39,7 @@ if __name__ == "__main__":
         if choice == 1:
             static()
         if choice == 2:
-            x = open("spambot2/assets/dictionary.txt", "r")
+            x = open("assets/dictionary.txt", "r")
             data = x.read()
             randwords(data)
             x.close()
